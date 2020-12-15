@@ -1,7 +1,7 @@
 /**
  * function that allows a user to input items they need at the store, separating each item with a comma.
  * The grocery list is sorted
- */
+ *//** 
 function grocery() {
     var items = [];
     var item1 = items.push(prompt("Item 1:"));
@@ -14,27 +14,33 @@ function grocery() {
         console.log(item);
     });    
 }
+*/
+
 /**
  * Function takes a sentence turns it into an array and builds a new array
  * Looks for words which have 3 or more characters
  * reverses the array and joins it to form a string
 */
- /*function arrays() {
-    var sentence = prompt("Write any sentence:");
+function arr() {
+    var sentence = prompt("Write any sentence below:"); 
     var words = sentence.split(' ');
+    var filteredArray = [];
     
-    var filteredArray = words.map(function (word){
-        if(word >= 3) {
-            return word;
+    words.forEach(function (word) {
+        if(word.length >= 3){
+            filteredArray.push(word);
+        }
+        else {
+            console.log("nothing");
         }
     });
-    alert(filteredArray);
-
     var reversedArray = filteredArray.reverse();
-    var joinedArray = reversedArray.join();
+    var joinedString = reversedArray.join();
+    console.log(joinedString);
 }
+arr();
 
-
+/**
 function multiple(number,multipleOf) {
     var array = [];
 
@@ -46,12 +52,12 @@ function multiple(number,multipleOf) {
 var number  = parseInt(prompt("Enter number:"));
 var multipleOf = parseInt(prompt("Enter number to get there:"));
 multiple(number,multipleOf);
-**/
+*/
 
 /**This a nested loop that prints a deck of cards 
  * A deck of cards are 52 consisting of 14 ranks each in 4 suits
 */
-
+/**
 var suits = ["spades","clubs","diamonds","hearts"];
 var ranks = ["1","2","3","4","5","6","7","8","9","10","jack","queen","king"];
 var deck = [];
@@ -63,3 +69,4 @@ suits.forEach(function (suit) {
 });
 
 console.log(deck);
+*/
